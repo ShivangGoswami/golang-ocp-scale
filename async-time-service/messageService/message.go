@@ -17,7 +17,7 @@ var (
 		"Time to relax",
 		"It's time to get out of here",
 	}
-	lengthofmessages = len(messages) + 1
+	lengthofmessages = len(messages)
 )
 
 var rdgen *rand.Rand
