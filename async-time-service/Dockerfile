@@ -8,8 +8,6 @@ RUN CGO_ENABLED=0 go build -o bin/async-time-service main.go
 FROM alpine:latest
 RUN apk --no-cache add ca-certificates
 WORKDIR /root/
-COPY --chown=1001 --from=builder /async-time-service/bin/async-time-service ./
+COPY --from=builder /async-time-service/bin/async-time-service ./
 EXPOSE 8080
-
-USER 1001
 ENTRYPOINT [ "./async-time-service" ]
