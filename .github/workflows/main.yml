@@ -1,5 +1,5 @@
 name: Docker
- on:
+on:
    push:
      branches: ['main']
  jobs:
