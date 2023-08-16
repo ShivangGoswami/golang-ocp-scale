@@ -30,7 +30,7 @@ jobs:
            username: ${{ secrets.QUAY_USER }}
            password: ${{ secrets.QUAY_TOKEN }}
        - name: Build and push
-         uses: docker/build-push-action@v3
+         uses: docker/build-push-action@v4
          with:
            context: "{{defaultContext}}:async-time-service"
            push: true
