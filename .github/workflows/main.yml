@@ -1,9 +1,9 @@
-name: Docker
+name: Quay Multi-Arch
 on:
    push:
-     branches: ['main']
- jobs:
-   docker:
+      branches: ['main']
+jobs:
+   builder:
      runs-on: ubuntu-latest
      steps:
        - name: Checkout repository
