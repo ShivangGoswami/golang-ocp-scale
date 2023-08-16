@@ -1,7 +1,7 @@
 name: Quay Multi-Arch
 on:
    push:
-      branches: ['main']
+      branches: ['master']
 jobs:
    builder:
      runs-on: ubuntu-latest
