@@ -34,4 +34,4 @@ jobs:
          with:
            context: "{{defaultContext}}:async-time-service"
            push: true
-           tags: sgoswami/golang-ocp-scale:latest
+           tags: quay.io/sgoswami/golang-ocp-scale:latest
